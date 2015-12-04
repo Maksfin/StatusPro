@@ -1,0 +1,8 @@
+// Main fonts
+@include font-face( 'HelveticaNeueCyrMedium', '#{$path-fonts}HelveticaNeueCyr-Medium', normal, normal, eot otf svg ttf woff);
+@include font-face( 'AnahitRegular', '#{$path-fonts}Anahit-Regular', normal, normal,  eot svg ttf woff);
+@include font-face( 'HelveticaNeueCyrLight', '#{$path-fonts}HelveticaNeueCyr-Light', normal, normal, eot otf svg ttf woff);
+@include font-face( 'HelveticaNeueCyrBold', '#{$path-fonts}HelveticaNeueCyr-Bold', normal, normal, eot otf svg ttf woff);
+@include font-face( 'HelveticaNeueCyrThin', '#{$path-fonts}HelveticaNeueCyr-Thin', normal, normal, eot otf svg ttf woff);
+
+

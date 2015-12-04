@@ -1,0 +1,26 @@
+footer.footer
+	.container
+		.footer__top
+			.footer__left
+				.footer-logo
+					a(href="#" title="На главную").logo
+						img(src="img/logo/logo_footer.png" alt="Lafoy").logo__img
+						span.logo__text Мебель&Свет
+				nav.footer-nav
+					+ul('nav-left', nav_left, -1, true)
+					+ul('nav-right', nav_right, -1, true)
+					.footer-nav__last
+			.footer__right
+				.footer-seach
+					form(action="#" method="get").footer-seach__form
+						input(type="seach" placeholder="Поиск...").footer-seach__input
+						input(type="submit").footer-seach__submit
+				.footer-contacts		
+					a(href="tel:+79313834945").footer-contacts__phone
+						span.footer-contacts__phone-num +7 931 383 49 45			
+					.footer-contacts__addres Санкт-Петербург, Коломяжский пр., 1
+				+ul('footer-links', footer_links, -1, true)
+		.footer__bottom
+			.container
+				.footer__copyright
+					a(href="#").footer__copyright-text Политика конфиденциальности и копирайт

@@ -1,0 +1,19 @@
+// Initialization 
+@import 'compass';
+
+// Normalize
+@import '_base/_normalize';
+
+// Base settings
+@import '_helpers/_mixins';
+@import '_helpers/_vars';
+@import '_base/_fonts';
+@import '_base/_overall';
+
+// Sprites general elements
+$general-sprite: sprite-map('elements/*.png', $spacing: 70px);
+
+// Section
+@import '_common/_header-page1';
+@import '_common/_content';
+@import '_common/_footer';

@@ -1,0 +1,156 @@
+.footer {
+	background: #555555;
+	position: relative;
+}
+
+.footer__top {
+	@include clearfix;
+}
+
+.footer__left {
+	float: left;
+	width: 58%;
+	padding-top: 28px
+}
+
+.footer-logo {
+	.logo {
+		float: left;
+		margin:0;
+		display: block;
+	}
+
+	.logo__img {
+		max-width: 108px;
+	}
+}
+
+.footer-nav {
+	float: left;
+	margin-left: 120px;
+	width: 205px;
+	font-size: $font-size_main - 4px;
+}
+
+.nav-left__list {
+	float:left;
+}
+
+.nav-right__list {
+	float: right;
+}
+
+.nav-left__item{
+	margin-top: 5px;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.nav-right__item {
+ 	@extend .nav-left__item;
+}
+
+.nav-left__link, .nav-right__link {
+	color: $main_white;
+	font-family: $font-light;
+	@include transition(.3s);
+
+	&:hover {
+		color: #ee7c00;
+	}
+}
+
+.footer__right {
+	float: right;
+	width: 42%;
+	padding-top: 20px;
+	margin-right: -10px;
+}
+
+.footer-seach {
+	margin-bottom: 30px;
+	margin-left: 9px;
+}
+
+.footer-seach__input {
+	width: 338px;
+	height: 43px;
+	line-height: 43px;
+	margin-right: -7px;
+	outline: none;
+	color: $main_black_text;
+	padding: 14px 11px;
+	// font-size: $font-size_main - 4px;
+	font-family: $font-light;
+	border: 0 none;
+	background-color: #fafafa;
+}
+
+.footer-seach__submit {
+	border:0 none;
+	outline: none;
+	width: 49px;
+	height: 43px;
+	text-indent: -9999px;
+	background: #fafafa url('../img/elements-s3f8f7e9ea3.png') 15px -156px no-repeat;
+}
+
+.footer-contacts {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #636363;
+}
+
+.footer-contacts__phone {
+	@include inlineblock(middle);
+	font-family: $font-bold;
+	color: $main_white;
+}
+
+.footer-contacts__addres {
+	@include inlineblock(middle);
+	margin-left: 4px;
+	font-family: $font-light;
+	font-size: $font-size_main - 4px;
+}
+
+.footer-links__list {
+	float: right;
+}
+
+.footer-links__item {
+	@include inlineblock(middle);
+	margin-left: 32px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.footer-links__link {
+	color: $main_white;
+	font-family: $font-light;
+	font-size: $font-size_main - 4px;
+
+	&:hover {
+		text-decoration: underline;
+	} 
+}
+
+.footer__bottom{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #464646;
+	height: 43px;
+	line-height: 43px;
+}
+
+.footer__copyright-text {
+	color: #919191;
+	font-family: $font-light;
+	font-size: $font-size_main - 4px;
+	text-decoration: underline;
+}

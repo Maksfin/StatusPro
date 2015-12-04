@@ -1,0 +1,139 @@
+extends ../main
+
+block title 
+	| Главная
+
+block header
+	header.header
+		.header-top
+			.header-top__left
+				a(href="#" title="На главную").logo
+					img(src="img/logo/logo_header.png" alt="StatusPro logo").logo__img
+					span.logo__text Мебель&Свет
+			.header-top__right
+				a(href="tel:8800305080" title="Телефон").phone
+					span.phone__text 8 800 30 50 80
+				.menu Меню
+			.header-menu
+				+ul('nav-header', nav_head, -1, false)
+		.container
+			.header-title
+				h2.header-title__text The collection Young Lion.
+					strong.header-title__text-bold  Angel
+			+ul('switches', nav_menu, 0, true)
+		//- form(action="#" method="get").form
+		//- 	input(type="seach" name="seach").form__seach
+		//- 	input(type="submit" name="submit" value="Найти").form__submit
+
+block content
+	article.content-wrapper
+		.container
+			.catalog
+				ul.catalog__list
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_large
+							img(src="img/photo/mebel_spalni.jpg" alt="Мебель для спальни")
+							.catalog__caption
+								.catalog__caption-text Мебель для спальни
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_small
+							img(src="img/photo/divan.jpg" alt="Диваны")
+							.catalog__caption
+								.catalog__caption-text Диваны			
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_small
+							img(src="img/photo/kresla.jpg" alt="Кресла")
+							.catalog__caption
+								.catalog__caption-text Кресла
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_small
+							img(src="img/photo/stol.jpg" alt="Столы")
+							.catalog__caption
+								.catalog__caption-text Столы
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_small
+							img(src="img/photo/stul.jpg" alt="Стулья")
+							.catalog__caption
+								.catalog__caption-text Стулья
+				ul.catalog__list.catalog__list_right
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_large
+							img(src="img/photo/mebel_detskai.jpg" alt="Мебель для детской")
+							.catalog__caption
+								.catalog__caption-text Мебель для детской
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_small
+							img(src="img/photo/terrasa.jpg" alt="Сад терраса")
+							.catalog__caption
+								.catalog__caption-text Сад терраса		
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_small
+							img(src="img/photo/kabinet.jpg" alt="Кабинет")
+							.catalog__caption
+								.catalog__caption-text Кабинет
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_small
+							img(src="img/photo/torsher.jpg" alt="Торшеры")
+							.catalog__caption
+								.catalog__caption-text Торшеры
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_small
+							img(src="img/photo/nastol_lampa.jpg" alt="Настольные лампы")
+							.catalog__caption
+								.catalog__caption-text Настольные лампы
+				ul.catalog__list
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_large
+							img(src="img/photo/lyustra.jpg" alt="Люстры")
+							.catalog__caption
+								.catalog__caption-text Люстры
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_small
+							img(src="img/photo/bra.jpg" alt="Бра и светильники")
+							.catalog__caption
+								.catalog__caption-text Бра и светильники
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_small
+							img(src="img/photo/podvesnoi.jpg" alt="Подвесные светильники")
+							.catalog__caption
+								.catalog__caption-text Подвесные
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_small
+							img(src="img/photo/street_svet.jpg" alt="Уличный свет")
+							.catalog__caption
+								.catalog__caption-text Уличный свет
+					li.catalog__item
+						a(href="#").catalog__link.catalog__link_small
+							img(src="img/photo/podsvetka.jpg" alt="Подсветка")
+							.catalog__caption
+								.catalog__caption-text Подсветка
+			.posts
+				.posts__title
+					h2.posts__title-text Полезные статьи
+				.container
+					ul.posts__list-left
+						li.posts__item
+							a(href="#").posts__link
+								img(src="img/photo/post_office.jpg" alt="Выбор мебели")
+							.posts__date 12 августа 2015
+							.posts__text 
+								a(href="#").posts__text-link Выбор мебели для офиса
+						li.posts__item
+							a(href="#").posts__link
+								img(src="img/photo/post_office.jpg" alt="Интерьер кухни")
+							.posts__date 12 августа 2015
+							.posts__text
+								a(href="#").posts__text-link Элегантный интерьер кухни
+					ul.posts__list-right
+						li.posts__item
+							a(href="#").posts__link
+								img(src="img/photo/post_right.jpg" alt="Зеркала в интерьере")
+							.posts__date 12 августа 2015
+							.posts__text
+								a(href="#").posts__text-link Зеркала в интерьере: 10 интресных идей
+						li.posts__item
+							a(href="#").posts__link
+								img(src="img/photo/post_right.jpg" alt="Уютный дачный дом")
+							.posts__date 12 августа 2015
+							.posts__text 
+								a(href="#").posts__text-link Как сделать дачный дом уютным: 10 лучших идей	
