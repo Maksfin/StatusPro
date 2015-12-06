@@ -14,17 +14,25 @@ block header
 				a(href="tel:8800305080" title="Телефон").phone
 					span.phone__text 8 800 30 50 80
 				.menu Меню
-			.header-menu
-				+ul('nav-header', nav_head, -1, false)
+		.head-bottom
+			.info
+				.info__basket
+				.info__count 15
+				.info__cost
+					span.info__cost-sum 230 300 р.
+				.info__sound
+			.seach
+				form(action="#" method="get").seach__form
+					input(type="seach" name="text" placeholder="Поиск...").seach__input
+					input(type="submit").seach__submit
+			+ul('nav-header', nav_head, 0, false)				
 		.container
 			.header-title
 				h2.header-title__text The collection Young Lion.
 					strong.header-title__text-bold  Angel
 			+ul('switches', nav_menu, 0, true)
-		//- form(action="#" method="get").form
-		//- 	input(type="seach" name="seach").form__seach
-		//- 	input(type="submit" name="submit" value="Найти").form__submit
-
+	.slider
+			
 block content
 	article.content-wrapper
 		.container

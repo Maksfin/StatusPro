@@ -71,14 +71,14 @@
 	opacity: 0.8;
 	height: 69px;
 	line-height: 69px;
-	@include transition(.6s ease-in);
+	@include transition(.4s ease-in);
 }
 
 .catalog__caption-text {
 	color: $main_black_text;
 	text-transform: uppercase;
 	font-size: $font-size_main;
-	@include transition(.6s ease-in);
+	@include transition(.4s ease-in);
 }
 
 .posts__title {

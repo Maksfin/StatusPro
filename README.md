@@ -1,6 +1,6 @@
 КАК УСТАНОВИТЬ МОЙ ПРОЕКТ
 
-1. git clone https://github.com/Maksfin/Lafoy site
+1. git clone https://github.com/Maksfin/StatusPro site
 
 2. cd site
 
