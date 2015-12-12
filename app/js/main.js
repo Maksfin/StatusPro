@@ -1,26 +1,34 @@
 var mainModule = (function() {
-	// приватные св-ва и методы
+	// приватные св-ва и методы 
 	
 	// прослушка событий
-	var _setUpListners = function() {
-		$('.menu').on('mouseenter', _menuOpen);
-	},
-		_menuOpen = function() {
+	// var _setUpListners = function() {
+	// 	$('.header-top').on('mouseenter', _menuOpen);
+	// },
 
+		_menuAction = function() {
+			$('.head-bottom').slideToggle('fast');
 		};
 
 	// публичные св-ва и методы
 	return {
-		init : function() {
-			_setUpListners();
-		}
+		init : function () {
+			$('.header-top').on('click', _menuAction);
+		} 
 	};
+
 })();
 
 $(document).ready(function($) {
 
- if ($('.nav-menu__list').length || $('.form').length) {
- 		mainModule.init();
- 	}
+	if($('.header').length) {
+		mainModule.init();
+	};
+
+ $('.slider').bxSlider({
+ 	controls: false,
+ 	auto: true,
+ });
+ 	
 }); // --> end
  

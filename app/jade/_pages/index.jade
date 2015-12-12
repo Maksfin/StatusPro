@@ -25,13 +25,20 @@ block header
 				form(action="#" method="get").seach__form
 					input(type="seach" name="text" placeholder="Поиск...").seach__input
 					input(type="submit").seach__submit
-			+ul('nav-header', nav_head, 0, false)				
-		.container
-			.header-title
-				h2.header-title__text The collection Young Lion.
-					strong.header-title__text-bold  Angel
-			+ul('switches', nav_menu, 0, true)
-	.slider
+			+ul('nav-header', nav_head, 0, false)
+	ul.slider
+		- for (var i = 0; i < 4; i++)
+			li.slider__item
+				img(src="http://lorempixel.com/1500/1000/technics/" alt="Image").slider__img				
+				.container
+					.header-title
+						h2.header-title__text The collection Young Lion.
+							strong.header-title__text-bold  Angel
+	//- .container
+	//- 	ul.switches__list
+	//- 		- for (var i = 0; i < 4; i++)
+	//- 			li.switches__item
+	//- 				a(href="" data-slide-index= i).switches__link
 			
 block content
 	article.content-wrapper

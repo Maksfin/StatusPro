@@ -1,16 +1,17 @@
-.header {
-	background-color: rgba(85, 85, 85, 0.6);
-	margin-bottom: 20px;
-}
 .head-bottom {
-	// background-color: rgba(85, 85, 85, 0.6);
-	@include clearfix;
+	display: none;
+	background-color: rgba(85, 85, 85, 0.6);
+	position: absolute;
+	left:0;
+	right: 0;
+	z-index:2;
 }
 
 .header-top {
 	height: 77px;
-	// background-color: rgba(85, 85, 85, 0.6);
-	@include clearfix;
+	background-color: rgba(85, 85, 85, 0.6);
+	position: relative;
+	z-index:2;
 }
 
 .header-top__left {
@@ -35,14 +36,14 @@
 
 			&:after {
 
-			@include get-sprite($general-sprite, logo_text_hover);
-			content:'';
-			display: block;
-			position: absolute;
-			top: 47px;
-			left: -16px;
-			height: 14px;
-		}
+				@include get-sprite($general-sprite, logo_text_hover);
+				content:'';
+				display: block;
+				position: absolute;
+				top: 47px;
+				left: -16px;
+				height: 14px;
+			}
 		}
 	}
 }
@@ -263,36 +264,4 @@
 
 .header-title__text-bold {
 	font-family: $font-bold;
-}
-
-.switches__list {
-	position: absolute;
-	bottom: 30px;
-}
-
-.switches__item {
-	@include inlineblock(middle);
-	width: 140px;
-	height: 6px;
-	margin-left: 20px;
-	background-color: $main_white;
-	opacity: 0.5;
-	text-indent: -9999px;
-	@include transition(.3s);
-
-	&:first-child {
-		margin-left: 0;
-	}
-
-	&_active {
-		opacity:1;
-	}
-
-	&:hover {
-		opacity:1;
-	}
-}
-.switches__link {
-	display: block;
-	height: 6px;
 }

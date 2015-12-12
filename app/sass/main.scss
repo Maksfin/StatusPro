@@ -10,6 +10,12 @@
 @import '_base/_fonts';
 @import '_base/_overall';
 
+// Plugins
+@import '_plugins/_jquery.bxslider';
+
+// Widgets
+@import '_widgets/_slider';
+
 // Sprites general elements
 $general-sprite: sprite-map('elements/*.png', $spacing: 70px);
 
